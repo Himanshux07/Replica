@@ -1,4 +1,4 @@
-/* General Body and Box Sizing */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,15 +7,15 @@
 
 body{
     background-color:#ecdac2;
-    overflow-x: hidden; /* Prevents horizontal scroll */
+    overflow-x: hidden; 
 }
 
-/* Navigation Bar */
+
 .navbar{
-    height: auto; /* Allow navbar to grow if content wraps */
+    height: auto; 
     min-height: 40px;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on small screens */
+    flex-wrap: wrap; 
     padding: 10px;
 }
 .left{
@@ -27,7 +27,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap; /* Allow links to wrap */
+    flex-wrap: wrap; 
     min-width: 300px;
 }
 a{
@@ -36,7 +36,7 @@ a{
     font-weight: 545;
     text-decoration: none;
     text-shadow: #00000040 0px 5px 2px ;
-    padding: 5px 10px; /* Add some padding for better spacing */
+    padding: 5px 10px; 
 }
 .img{
     height: 50px;
@@ -46,17 +46,17 @@ a{
     margin-left: 20px;
 }
 
-/* Hero Section - NEW WRAPPER */
+
 .hero-section {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    flex-wrap: wrap; 
     padding: 20px;
     gap: 20px;
 }
 .hero-text {
-    flex: 1; /* Allow text content to take up available space */
+    flex: 1; 
     max-width: 600px;
 }
 .heading{
@@ -66,26 +66,26 @@ a{
     font-size: 100px;
     font-family: "Black Han Sans" , sans-serif;
     text-shadow: #00000040 0px 15px 2px ;
-    margin-top: 0; /* Removed fixed margin */
+    margin-top: 0;
 }
 .photo{
     background-image: url(assests/Boy.png);
     background-size: cover;
-    background-position: center; /* Center the image */
+    background-position: center; 
     height: 700px;
     width: 100%;
-    max-width: 380px; /* Keep max-width but allow it to shrink */
-    margin: 20px 0; /* Removed float and adjusted margin */
-    flex-shrink: 0; /* Prevent the image from shrinking too much */
+    max-width: 380px; 
+    margin: 20px 0;
+    flex-shrink: 0; 
 }
 .photo :hover{
     cursor: pointer;
 }
 .statement{
     height: auto;
-    width: 100%; /* Make width flexible */
+    width: 100%; 
     max-width: 520px;
-    margin: 20px 0 0 0; /* Removed large left margin */
+    margin: 20px 0 0 0; 
     font-family: "BIZ UDMincho", serif;
     font-size: 20px;
     font-weight: 400;
@@ -97,7 +97,7 @@ a{
     display: flex;
     border-radius: 50px;
     font-size: 30px;
-    margin: 40px auto; /* Center the button */
+    margin: 40px auto; 
     font-family: "Black Ops One", system-ui;
     align-items: center;
     justify-content: center;
@@ -107,7 +107,7 @@ a{
     cursor: pointer;
 }
 
-/* Explore Section */
+
 .explore{
     height: auto;
     width: auto;
@@ -116,33 +116,33 @@ a{
     text-shadow: #00000040 0px 10px 2px ;
     font-size: 40PX;
     margin: 50PX;
-    text-align: center; /* Center text */
+    text-align: center;
 }
 .stt{
     font-family: "Birthstone", cursive;
     color: #000000;
     width: 90%;
-    max-width: 450px; /* Give a max-width for readability */
-    margin: 50px auto; /* Center the text block */
+    max-width: 450px; 
+    margin: 50px auto; 
     font-size: 17px;
     text-align: center;
 }
 
-/* Picture Grid */
+
 .picture{
-    height: auto; /* Let content define height */
-    width: 90%; /* Fluid width */
-    max-width: 1100px; /* Set a max-width */
-    margin: 100px auto; /* Center the grid */
+    height: auto; 
+    width: 90%; 
+    max-width: 1100px;
+    margin: 100px auto;
     display: flex;
-    flex-wrap: wrap; /* Allow columns to wrap */
+    flex-wrap: wrap; 
     border: 25px black solid;
 }
 .con1, .con2{
     display: flex;
     flex-direction: column;
-    width: 50%; /* Each column takes 50% */
-    min-width: 300px; /* Minimum width before wrapping */
+    width: 50%; 
+    min-width: 300px; 
 }
 .pic1{ height: 400px; width: 100%; background-image: url(assests/pic\ 1.png); background-size: cover; background-position: center;}
 .pic2{ height: 400px; width: 100%; background-image: url(assests/pic\ 2.png); background-size: cover; background-position: center;}
@@ -150,27 +150,23 @@ a{
 .pic4{ height: 600px; width: 100%; background-image: url(assests/pic\ 4.png); background-size: cover; background-position: center;}
 .pic5{ height: 400px; width: 100%; background-image: url(assests/pic\ 5.png); background-size: cover; background-position: center;}
 
-/* Play Section */
+
 .play{
     height: 320px;
-    width: 90%; /* Fluid width */
-    max-width: 650px; /* Set a max-width */
-    margin: 150px auto; /* Center the element */
+    width: 90%; 
+    max-width: 650px; 
+    margin: 150px auto; 
     background-image: url(assests/play.png);
-    background-size: contain; /* Use contain to prevent cropping */
+    background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
 }
 
 
-/* =================================== */
-/* ========== MEDIA QUERIES ========== */
-/* =================================== */
 
-/* For Tablets and smaller desktops (<= 1024px) */
 @media (max-width: 1024px) {
     .hero-section {
-        flex-direction: column; /* Stack hero content vertically */
+        flex-direction: column; 
         text-align: center;
     }
     .photo {
@@ -187,10 +183,10 @@ a{
     }
 }
 
-/* For Mobile Phones (<= 600px) */
+
 @media (max-width: 600px) {
     .navbar {
-        flex-direction: column; /* Stack logo and links */
+        flex-direction: column;
         align-items: center;
         gap: 15px;
     }
@@ -201,11 +197,11 @@ a{
         font-size: 20px;
     }
     .heading {
-        font-size: 50px; /* Further reduce font size for mobile */
+        font-size: 50px; 
         text-shadow: #00000040 0px 8px 2px;
     }
     .photo {
-        height: 400px; /* Adjust image height for mobile */
+        height: 400px; 
     }
     .statement {
         font-size: 18px;
@@ -220,10 +216,10 @@ a{
         margin: 30px;
     }
     .picture {
-        flex-direction: column; /* Stack picture columns vertically */
+        flex-direction: column; 
     }
     .con1, .con2 {
-        width: 100%; /* Columns take full width */
+        width: 100%; 
     }
     .play {
         height: 200px;
